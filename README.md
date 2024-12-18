@@ -1,30 +1,28 @@
-# User API - Demo Application
+# API - CRUD - KOTLIN - KTOR
 
-Bem-vindo à **User API**, uma aplicação demonstrativa desenvolvida com **Kotlin** e conectada a um banco de dados PostgreSQL. O objetivo deste projeto é fornecer endpoints para gerenciamento de usuários, incluindo registro, autenticação e manipulação de dados básicos.
+Bem-vindo à **API**, uma aplicação demonstrativa desenvolvida com **Kotlin** e conectada a um banco de dados PostgreSQL. O objetivo deste projeto é fornecer endpoints para gerenciamento de usuários, incluindo registro, autenticação e manipulação de dados básicos.
 
 ![Platform](https://img.shields.io/badge/platform-Kotlin-blue.svg)  
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ---
 
-## **Table of Contents**
+## **Índice**
 
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-  - [Prerequisites](#prerequisites)
-  - [Setting Up the Database](#setting-up-the-database)
-  - [Running the API](#running-the-api)
-- [Testing the API](#testing-the-api)
-- [Endpoints](#endpoints)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Visão geral](#visão-geral)
+- [Recursos](#recursos)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Instalação](#instalação)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Configurando o banco de dados](#configurando-o-banco-de-dados)
+  - [Executando a API](#executando-api)
+  - [Endpoints Disponíveis](#endpoints-disponiveis)
+  - [Exemplos com curl](#exemplos-com-curl)
+- [Testando a API](#testing-the-api)
+- [Contactos](#contactos)
 
 ---
 
-## **Overview**
+## **Visão Geral**
 
 Esta API é projetada para manipular operações básicas de gerenciamento de usuários, oferecendo endpoints RESTful simples e uma estrutura organizada em **Kotlin**.
 
@@ -32,16 +30,16 @@ A API pode ser integrada a sistemas maiores, sendo facilmente extensível para s
 
 ---
 
-## **Features**
+## **Recursos**
 
 - **Registro de Usuários**: Criação de novos usuários com nome, e-mail e senha.
-- **Autenticação**: Validação segura das credenciais dos usuários.
+- **Edição, exclusão, consulta de Usuarios**: Consulta, exclusão, edição ed usuarios.
 - **Estrutura Limpa**: Organizada com pastas `data`, `db`, `model` e `services`.
 - **Fácil Configuração**: Pode ser adaptada rapidamente para diferentes bancos de dados.
 
 ---
 
-## **Project Structure**
+## **Estrutura do Projeto**
 
 A estrutura do projeto está organizada da seguinte forma:
 
@@ -63,9 +61,9 @@ src
                 ├── IUserServices.kt
                 └── UserServices.kt
 ```
-## **Installation**
+## **Instalação**
 
-### **Prerequisites**
+### **Pré-requisitos**
 
 Antes de iniciar o projeto, você precisará instalar os seguintes recursos:
 
@@ -76,13 +74,7 @@ Antes de iniciar o projeto, você precisará instalar os seguintes recursos:
 
 ---
 
-### **Setting Up the Database**
-
-1. **Instale o PostgreSQL** e crie um novo banco de dados chamado `teste_kotlin`.
-
-2. **Atualize as credenciais** no arquivo `Connectiondb.kt`:
-
-   ### **Setting Up the Database**
+### **Configurando o banco de dados**
 
 1. **Instale o PostgreSQL** e crie um novo banco de dados chamado `teste_kotlin`.
 
@@ -112,7 +104,7 @@ Antes de iniciar o projeto, você precisará instalar os seguintes recursos:
            newSuspendedTransaction(Dispatchers.IO) { block() }
    }
 
-### Running the API
+### Executando a API
 
 Para rodar a API localmente, siga os passos abaixo:
 
@@ -157,13 +149,13 @@ curl -X POST http://127.0.0.1:8080/user/getUser?email=joao@email.com \
 -message 'User(id=3, name=João, email=joao@email.com, password=123456)'
 ```
 
-## Contact
+## Contactos
 
-If you have any questions, feedback, or concerns about the API, please feel free to contact me:
+Se você tiver alguma dúvida, feedback ou preocupação sobre a API, sinta-se à vontade para entrar em contato comigo:
 
 - **Email**: [leonel.francisco@my.istec.pt](mailto:leonel.francisco@my.istec.pt)
 - **Phone**: [+351929393928](tel:+351929393928)
-- **Social Media**:
+- **Redes Sociais**:
   - [Twitter](https://x.com/lionelmendes_)
 
-Estou sempre aberto para ouvir suas opiniões e sugestões! Quer seja um relatório de bug, uma solicitação de recurso ou apenas para dizer olá, não hesite em entrar em contato. Seu feedback é altamente valorizado e ajuda a melhorar o aplicativo para todos.
+Estou sempre aberto para ouvir suas opiniões e sugestões! Quer seja um relatório de bug, uma solicitação de recurso ou apenas para dizer olá, não hesite em entrar em contato. Seu feedback é altamente valorizado e ajuda a melhorar a API para todos.
