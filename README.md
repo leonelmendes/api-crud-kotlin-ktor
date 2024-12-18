@@ -16,7 +16,7 @@ Bem-vindo à **API**, uma aplicação demonstrativa desenvolvida com **Kotlin** 
 - [Instalação](#instalação)
   - [Pré-requisitos](#pré-requisitos)
   - [Configurando o banco de dados](#configurando-o-banco-de-dados)
-  - [Executando a API](#executando-api)
+  - [Executando a API](#executando-a-api)
   - [Endpoints Disponíveis](#endpoints-disponiveis)
   - [Exemplos com curl](#exemplos-com-curl)
 - [Testando a API](#testing-the-api)
