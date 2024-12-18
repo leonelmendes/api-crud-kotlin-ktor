@@ -69,7 +69,6 @@ src
 
 Antes de iniciar o projeto, você precisará instalar os seguintes recursos:
 
-- [JDK 17+](https://adoptopenjdk.net/)
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 - [PostgreSQL](https://www.postgresql.org/download/)
 - [Gradle](https://gradle.org/install/)
