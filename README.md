@@ -2,7 +2,9 @@
 
 Bem-vindo à **API**, uma aplicação demonstrativa desenvolvida com **Kotlin** e conectada a um banco de dados PostgreSQL. O objetivo deste projeto é fornecer endpoints para gerenciamento de usuários, incluindo registro, autenticação e manipulação de dados básicos.
 
-![Platform](https://img.shields.io/badge/platform-Kotlin-blue.svg)  
+![Platform](https://img.shields.io/badge/platform-Kotlin-blue.svg)
+![Database](https://img.shields.io/badge/database-PostgreSQL-blue.svg)  
+![Framework](https://img.shields.io/badge/framework-Ktor-blue.svg)  
 
 ---
 
