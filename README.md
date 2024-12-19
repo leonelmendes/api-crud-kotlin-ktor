@@ -111,8 +111,8 @@ Para rodar a API localmente, siga os passos abaixo:
 
 1. **Navegue até o diretório do projeto e clone o repositório:**:
      ```bash
-     git clone https://github.com/seu-usuario/user-api-demo.git
-     cd user-api-demo
+     git clone https://github.com/leonelmendes/api-crud-kotlin-ktor.git
+     cd api-crud-kotlin-ktor
 
 2. **Execute o projeto com Gradle:**:
     ```bash
